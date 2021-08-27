@@ -28,7 +28,7 @@ def predict_proba(string_list, model, tokenizer):
 
 header = st.container()
 
-path = 'model'
+path = '/model'
 
 loaded_tokenizer = DistilBertTokenizer.from_pretrained(path)
 loaded_model = TFDistilBertForSequenceClassification.from_pretrained(path) 
